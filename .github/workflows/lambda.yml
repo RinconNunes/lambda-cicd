@@ -5,7 +5,7 @@ on:
     branches:
       - test
     paths:
-      - "lambda/**"
+      - "lambda.yml"
 
 jobs:
   deploy-lambda: # Name of our job
