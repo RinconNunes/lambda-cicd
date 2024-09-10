@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Sets up Python # Sets up our Python Enviroment
+      - name: Set up Python # Sets up our Python Enviroment
         uses: actions/setup-python@v2
         with:
           python-version: "3.12"
@@ -28,7 +28,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-west-2
+          aws-region: eu-west-1
 
       - name: Deploy to AWS Lambda # Zips lambda directory and updates lambda function
         run: |
